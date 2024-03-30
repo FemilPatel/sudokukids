@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import moment from 'moment';
-import { Header } from './components/layout/Header';
+// import { Header } from './components/layout/Header';
 import { GameSection } from './components/layout/GameSection';
 import { StatusSection } from './components/layout/StatusSection';
 import { getUniqueSudoku } from './solver/UniqueSudoku';
