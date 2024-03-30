@@ -114,9 +114,9 @@ export const Game: React.FC<{}> = () => {
    * On Click of 'New Game' link,
    * create a new game.
    */
-  function onClickNewGame() {
-    _createNewGame();
-  }
+  // function onClickNewGame() {
+  //   _createNewGame();
+  // }
 
   /**
    * On Click of a Game cell.
@@ -221,7 +221,7 @@ export const Game: React.FC<{}> = () => {
   return (
     <>
       <div className={overlay?"container blur":"container"}>
-        <Header onClick={onClickNewGame}/>
+    
         <div className="innercontainer">
           <GameSection
             onClick={(indexOfArray: number) => onClickCell(indexOfArray)}
@@ -244,7 +244,7 @@ export const Game: React.FC<{}> = () => {
            onClick={onClickOverlay}
       >
         <h2 className="overlay__text">
-          You <span className="overlay__textspan1">solved</span> <span className="overlay__textspan2">it!</span>
+        Here’s <span className="overlay__textspan1">your solved</span> <span className="overlay__textspan2">Sudoku board.</span>
         </h2>
       </div>
     </>
