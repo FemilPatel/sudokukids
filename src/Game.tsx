@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import moment from 'moment';
+import { Header } from './components/layout/Header';
 import { GameSection } from './components/layout/GameSection';
 import { StatusSection } from './components/layout/StatusSection';
 import { getUniqueSudoku } from './solver/UniqueSudoku';
@@ -113,9 +114,9 @@ export const Game: React.FC<{}> = () => {
    * On Click of 'New Game' link,
    * create a new game.
    */
-  // function onClickNewGame() {
-  //   _createNewGame();
-  // }
+  function onClickNewGame() {
+    _createNewGame();
+  }
 
   /**
    * On Click of a Game cell.
@@ -220,7 +221,7 @@ export const Game: React.FC<{}> = () => {
   return (
     <>
       <div className={overlay?"container blur":"container"}>
-
+        <Header onClick={onClickNewGame}/>
         <div className="innercontainer">
           <GameSection
             onClick={(indexOfArray: number) => onClickCell(indexOfArray)}
