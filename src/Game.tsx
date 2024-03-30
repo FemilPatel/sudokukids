@@ -3,7 +3,6 @@ import moment from 'moment';
 import { Header } from './components/layout/Header';
 import { GameSection } from './components/layout/GameSection';
 import { StatusSection } from './components/layout/StatusSection';
-import { Footer } from './components/layout/Footer';
 import { getUniqueSudoku } from './solver/UniqueSudoku';
 import { useSudokuContext } from './context/SudokuContext';
 
