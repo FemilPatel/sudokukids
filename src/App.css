@@ -236,6 +236,7 @@ body {
   font-family: 'Josefin Sans', sans-serif;;
   font-size: 30px;
   line-height: 1.5;
+  font-weight: 700;
   letter-spacing: 0.2em;
   background-color: #1E1E1E;
   color: #fff;
@@ -510,6 +511,7 @@ input:checked + .status__action-fast-mode-slider:before {
     top: -18px;
     left: 0;
     width: 70%;
+    
   }
   .status__time {
     top: -20px;
