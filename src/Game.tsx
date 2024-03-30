@@ -114,9 +114,9 @@ export const Game: React.FC<{}> = () => {
    * On Click of 'New Game' link,
    * create a new game.
    */
-  // function onClickNewGame() {
-  //   _createNewGame();
-  // }
+  function onClickNewGame() {
+    _createNewGame();
+  }
 
   /**
    * On Click of a Game cell.
@@ -234,6 +234,7 @@ export const Game: React.FC<{}> = () => {
             onClickHint={onClickHint}
             onClickMistakesMode={onClickMistakesMode}
             onClickFastMode={onClickFastMode}
+            onClickNewGame={onClickNewGame}
           />
         </div>
       </div>

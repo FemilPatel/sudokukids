@@ -13,6 +13,7 @@ type StatusSectionProps = {
   onClickHint: () => void,
   onClickMistakesMode: () => void,
   onClickFastMode: () => void,
+  onClickNewGame: () => void,
 };
 
 /**
@@ -28,6 +29,7 @@ export const StatusSection = (props: StatusSectionProps) => {
         <Action action='undo' onClickAction={props.onClickUndo} />
         <Action action='erase' onClickAction={props.onClickErase} />
         <Action action='hint' onClickAction={props.onClickHint} />
+        <Action action='refresh' onClickAction={props.onClickNewGame} />
         <Mode mode='mistakes' onClickMode={props.onClickMistakesMode} />
         <Mode mode='fast' onClickMode={props.onClickFastMode} />
       </div>
