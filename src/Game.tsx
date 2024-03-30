@@ -237,7 +237,6 @@ export const Game: React.FC<{}> = () => {
             onClickFastMode={onClickFastMode}
           />
         </div>
-        <Footer />
       </div>
       <div className= { overlay
                         ? "overlay overlay--visible"
